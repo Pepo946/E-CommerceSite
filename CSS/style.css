@@ -1,23 +1,22 @@
-/* google font */
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Google font */
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
   --primary-color: #088178;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Spartan", sans-serif;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
-/********** Global Styles ************/
-
+/* Global styles */
 h1 {
   font-size: 3.125rem;
   line-height: 4rem;
@@ -50,72 +49,44 @@ a {
   text-decoration: none;
 }
 
-.section-p1 {
-  padding: 40px 80px;
-}
-
-.section-m1 {
-  margin: 40px 0;
-}
-
-button.normal {
-  font-size: 14px;
-  font-weight: 600;
-  padding: 15px 30px;
-  color: #000;
-  background-color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  transition: all 0.3s ease;
-}
-
-button.white {
-  font-size: 13px;
-  font-weight: 600;
-  padding: 11px 18px;
-  color: #ffffff;
-  background-color: transparent;
-  cursor: pointer;
-  border: 1px solid white;
-  outline: none;
-  transition: all 0.3s ease;
-}
-
-/* header section */
+/* Header section */
 #Header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 80px;
   background: #e3e6f3;
-  box-shadow: 0 5 15px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
   position: sticky;
   top: 0;
   left: 0;
   z-index: 10;
 }
+
 #navbar {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 #navbar li {
   list-style: none;
   padding: 0 20px;
   position: relative;
 }
+
 #navbar li a {
   font-size: 1rem;
   font-weight: 600;
   color: #1a1a1a;
-  transition: all 0.3 ease;
+  transition: all 0.3s ease;
 }
+
 #navbar li a:hover,
 #navbar li a.active {
   color: var(--primary-color);
 }
+
 #navbar li a:hover::after,
 #navbar li a.active::after {
   content: "";
@@ -126,16 +97,26 @@ button.white {
   bottom: -4px;
   left: 20px;
 }
+
 .head-cart {
   font-size: 1.4rem;
 }
+
 #mobile {
   display: none;
 }
+
 #close {
   display: none;
 }
-/*Hero Section */
+
+/* Mobile navigation icon */
+#mobile i.fa-bars {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
 #img-slider {
   height: 90vh;
   width: 100%;
@@ -186,24 +167,24 @@ button.white {
 /* feature section*/
 #feature {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
 }
 #feature .fe-box {
-  width: 180px;
+  width: 200px;
   text-align: center;
   padding: 25px 15px;
   box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.03);
-  border: 2px solid #cce7d0;
+  border: 2px solid #b0c5b3;
   border-radius: 5px;
-  margin: 15px 0;
+  margin: 100px 30px;
   cursor: pointer;
   transition: all 0.3 linear;
 }
 
 #feature .fe-box:hover {
-  box-shadow: 10px 10px 55px rgba(70, 62, 221, 0.1);
+  box-shadow: 10px 10px 55px rgba(11, 0, 219, 0.1);
 }
 #feature .fe-box img {
   width: 100%;
@@ -230,4 +211,71 @@ button.white {
 }
 #feature .fe-box:nth-child(6) h6 {
   background-color: #fff2e5;
+}
+/* product section*/
+#product1 {
+  text-align: center;
+}
+#product1 .pro-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#product1 .pro-container .pro {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.02);
+  margin: 15px 12px;
+  position: relative;
+  transition: all 0.03 linear;
+}
+
+#product1.pro-container .pro:hover {
+  box-shadow: 20px 20px 30px rgb(11, 0, 219, 0.06);
+}
+#product1 .pro-container .pro img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+#product1 .pro .des {
+  text-align: start;
+  padding: 10px 10px ;
+}
+#product1 .pro span {
+  color: #606063;
+  font-weight: bold;
+}
+#product1 .pro .des h5 {
+  padding-top: 7px;
+  color: #1a1a1a;
+  font-size: 20px;
+}
+#product1 .pro .star i {
+  font-size: 12px;
+  color: rgb(243, 181, 25);
+}
+#product1 .pro .des h4 {
+  padding: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+#product1 .pro .cart i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #e8f6ea;
+  border-radius: 50px;
+  color: var(--primary-color);
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
 }
