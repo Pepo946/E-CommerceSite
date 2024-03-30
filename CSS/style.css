@@ -67,6 +67,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 #navbar li {
@@ -80,6 +81,9 @@ a {
   font-weight: 600;
   color: #1a1a1a;
   transition: all 0.3s ease;
+}
+#mobile #bar {
+  cursor: pointer;
 }
 
 #navbar li a:hover,
@@ -322,7 +326,6 @@ a {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  
 }
 #sm-banner .banner-box {
   background: url(../img/img1.jpg) center/cover;
@@ -354,7 +357,7 @@ a {
   padding-bottom: 15px;
 }
 #sm-banner button {
-  background:transparent;
+  background: transparent;
   color: dark;
   border: 1px solid var(--primary-color);
   padding: 10px 40px;
@@ -370,18 +373,17 @@ a {
   color: white;
 }
 
-#sm-banner .banner-box:nth-child(2){
-  background: url(../img/banner/b10.jpg) center/cover no-repeat ;
+#sm-banner .banner-box:nth-child(2) {
+  background: url(../img/banner/b10.jpg) center/cover no-repeat;
 }
 /*banner3*/
-#banner3{
+#banner3 {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 0 80px;
-
 }
-#banner3 .banner-box{
+#banner3 .banner-box {
   background: url(../img/img4.jpg) center/cover no-repeat;
   height: 30vh;
   min-width: 28%;
@@ -389,52 +391,51 @@ a {
   flex-direction: column;
   justify-content: center;
   align-content: flex-start;
-  padding: 20px ;
+  padding: 20px;
   margin-bottom: 20px;
   border: 2px solid rgb(142, 194, 183);
   border-radius: 5px;
 }
-#banner3 .banner-box h4{
+#banner3 .banner-box h4 {
   color: rgb(41, 32, 19);
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 25px;
+  font-weight: 500;
 }
 
-#banner3 .banner-box h3{
+#banner3 .banner-box h3 {
   color: rgb(43, 150, 105);
   font-size: 25px;
   font-weight: 800;
 }
-#banner3 .banner-box:nth-child(2){
+#banner3 .banner-box:nth-child(2) {
   background: url(../img/img7.jpg) center/cover no-repeat;
 }
-#banner3 .banner-box:nth-child(3){
+#banner3 .banner-box:nth-child(3) {
   background: url(../img/img1.jpg) center/cover no-repeat;
 }
 /*letter section */
-#newsletter{
+#newsletter {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   background: url(../img/banner/b1.jpg) center/cover no-repeat;
   padding: 40px 110px;
-
 }
-#newsletter h4{
+#newsletter h4 {
   color: white;
   font-weight: 700;
   font-size: 25px;
 }
-#newsletter p{
+#newsletter p {
   font-size: 15px;
   font-weight: 600;
   color: gray;
 }
-#newsletter p span{
+#newsletter p span {
   color: #ffbd27;
 }
-#newsletter input{
+#newsletter input {
   height: 3.25rem;
   padding: 1.25rem;
   font-size: 15px;
@@ -446,7 +447,7 @@ a {
   border-bottom-right-radius: 0;
 }
 #newsletter button {
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
   color: dark;
   border: 1px solid var(--primary-color);
   padding: 10px 40px;
@@ -465,63 +466,60 @@ a {
   color: white;
 }
 
-#newsletter .form{
+#newsletter .form {
   display: flex;
   width: 40%;
 }
 /*footer*/
-footer{
+footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-between ;
+  justify-content: space-between;
   margin: 40px;
 }
-footer .col{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-margin-bottom: 20px;
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
 }
-footer .logo{
+footer .logo {
   cursor: pointer;
-margin-bottom: 30px;
+  margin-bottom: 30px;
 }
-footer h4{
+footer h4 {
   font-size: 15px;
   margin-bottom: 20px;
-
 }
-footer p{
+footer p {
   font-size: 15px;
   margin-bottom: 10px;
 }
-footer a{
+footer a {
   font-size: 15px;
   text-decoration: none;
   color: #222;
-
 }
-footer .follow{
+footer .follow {
   margin-top: 20px;
 }
-footer .follow i{
+footer .follow i {
   color: #465b52;
   margin-right: 5px;
 }
-footer .install .row img{
+footer .install .row img {
   border: 1px solid var(--primary-color);
   cursor: pointer;
   border-radius: 5px;
 }
-footer .follow i:hover{
+footer .follow i:hover {
   color: var(--primary-color);
 }
-footer .install img{
+footer .install img {
   margin: 10px 0 5px;
 }
-footer .copyright{
+footer .copyright {
   width: 100%;
-  
+
   text-align: center;
 }
-
